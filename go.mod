@@ -1,4 +1,4 @@
-module github.com/ethereum/go-etdereum
+module github.com/zero-element/go-etdereum
 
 go 1.15
 
