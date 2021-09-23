@@ -27,17 +27,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/signer/core"
-	"github.com/ethereum/go-ethereum/signer/core/apitypes"
-	"github.com/ethereum/go-ethereum/signer/fourbyte"
-	"github.com/ethereum/go-ethereum/signer/storage"
+	"github.com/zero-element/go-etdereum/accounts"
+	"github.com/zero-element/go-etdereum/accounts/keystore"
+	"github.com/zero-element/go-etdereum/common"
+	"github.com/zero-element/go-etdereum/common/hexutil"
+	"github.com/zero-element/go-etdereum/core/types"
+	"github.com/zero-element/go-etdereum/internal/ethapi"
+	"github.com/zero-element/go-etdereum/rlp"
+	"github.com/zero-element/go-etdereum/signer/core"
+	"github.com/zero-element/go-etdereum/signer/core/apitypes"
+	"github.com/zero-element/go-etdereum/signer/fourbyte"
+	"github.com/zero-element/go-etdereum/signer/storage"
 )
 
 //Used for testing

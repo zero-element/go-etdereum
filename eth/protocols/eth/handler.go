@@ -21,15 +21,15 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/enr"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/zero-element/go-etdereum/common"
+	"github.com/zero-element/go-etdereum/core"
+	"github.com/zero-element/go-etdereum/core/types"
+	"github.com/zero-element/go-etdereum/metrics"
+	"github.com/zero-element/go-etdereum/p2p"
+	"github.com/zero-element/go-etdereum/p2p/enode"
+	"github.com/zero-element/go-etdereum/p2p/enr"
+	"github.com/zero-element/go-etdereum/params"
+	"github.com/zero-element/go-etdereum/trie"
 )
 
 const (

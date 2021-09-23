@@ -31,12 +31,12 @@ import (
 	"testing/quick"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/ethdb/leveldb"
-	"github.com/ethereum/go-ethereum/ethdb/memorydb"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/zero-element/go-etdereum/common"
+	"github.com/zero-element/go-etdereum/crypto"
+	"github.com/zero-element/go-etdereum/ethdb"
+	"github.com/zero-element/go-etdereum/ethdb/leveldb"
+	"github.com/zero-element/go-etdereum/ethdb/memorydb"
+	"github.com/zero-element/go-etdereum/rlp"
 	"golang.org/x/crypto/sha3"
 )
 

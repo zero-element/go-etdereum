@@ -34,11 +34,11 @@ import (
 	"unsafe"
 
 	"github.com/edsrzf/mmap-go"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/rpc"
 	"github.com/hashicorp/golang-lru/simplelru"
+	"github.com/zero-element/go-etdereum/consensus"
+	"github.com/zero-element/go-etdereum/log"
+	"github.com/zero-element/go-etdereum/metrics"
+	"github.com/zero-element/go-etdereum/rpc"
 )
 
 var ErrInvalidDumpMagic = errors.New("invalid dump magic")

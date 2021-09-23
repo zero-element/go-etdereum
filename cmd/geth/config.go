@@ -27,19 +27,19 @@ import (
 
 	"gopkg.in/urfave/cli.v1"
 
-	"github.com/ethereum/go-ethereum/accounts/external"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/accounts/scwallet"
-	"github.com/ethereum/go-ethereum/accounts/usbwallet"
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/eth/catalyst"
-	"github.com/ethereum/go-ethereum/eth/ethconfig"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/params"
 	"github.com/naoina/toml"
+	"github.com/zero-element/go-etdereum/accounts/external"
+	"github.com/zero-element/go-etdereum/accounts/keystore"
+	"github.com/zero-element/go-etdereum/accounts/scwallet"
+	"github.com/zero-element/go-etdereum/accounts/usbwallet"
+	"github.com/zero-element/go-etdereum/cmd/utils"
+	"github.com/zero-element/go-etdereum/eth/catalyst"
+	"github.com/zero-element/go-etdereum/eth/ethconfig"
+	"github.com/zero-element/go-etdereum/internal/ethapi"
+	"github.com/zero-element/go-etdereum/log"
+	"github.com/zero-element/go-etdereum/metrics"
+	"github.com/zero-element/go-etdereum/node"
+	"github.com/zero-element/go-etdereum/params"
 )
 
 var (

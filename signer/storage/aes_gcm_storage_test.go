@@ -23,9 +23,9 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
 	"github.com/mattn/go-colorable"
+	"github.com/zero-element/go-etdereum/common"
+	"github.com/zero-element/go-etdereum/log"
 )
 
 func TestEncryption(t *testing.T) {
