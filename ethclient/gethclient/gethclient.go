@@ -52,7 +52,7 @@ func (ec *Client) CreateAccessList(ctx context.Context, msg ethereum.CallMsg) (*
 		GasUsed    hexutil.Uint64    `json:"gasUsed"`
 	}
 	var result accessListResult
-	if err := ec.c.CallContext(ctx, &result, "eth_createAccessList", toCallArg(msg)); err != nil {
+	if err := ec.c.CallContext(ctx, &result, "etd_createAccessList", toCallArg(msg)); err != nil {
 		return nil, 0, "", err
 	}
 	return result.Accesslist, uint64(result.GasUsed), result.Error, nil
@@ -97,7 +97,7 @@ func (ec *Client) GetProof(ctx context.Context, account common.Address, keys []s
 	}
 
 	var res accountResult
-	err := ec.c.CallContext(ctx, &res, "eth_getProof", account, keys, toBlockNumArg(blockNumber))
+	err := ec.c.CallContext(ctx, &res, "etd_getProof", account, keys, toBlockNumArg(blockNumber))
 	// Turn hexutils back to normal datatypes
 	storageResults := make([]StorageResult, 0, len(res.StorageProof))
 	for _, st := range res.StorageProof {
@@ -140,7 +140,7 @@ type OverrideAccount struct {
 func (ec *Client) CallContract(ctx context.Context, msg ethereum.CallMsg, blockNumber *big.Int, overrides *map[common.Address]OverrideAccount) ([]byte, error) {
 	var hex hexutil.Bytes
 	err := ec.c.CallContext(
-		ctx, &hex, "eth_call", toCallArg(msg),
+		ctx, &hex, "etd_call", toCallArg(msg),
 		toBlockNumArg(blockNumber), toOverrideMap(overrides),
 	)
 	return hex, err

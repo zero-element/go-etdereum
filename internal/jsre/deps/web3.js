@@ -5217,7 +5217,7 @@ var Iban = require('../iban');
 var transfer = require('../transfer');
 
 var blockCall = function (args) {
-    return (utils.isString(args[0]) && args[0].indexOf('0x') === 0) ? "eth_getBlockByHash" : "eth_getBlockByNumber";
+    return (utils.isString(args[0]) && args[0].indexOf('0x') === 0) ? "etd_getBlockByHash" : "etd_getBlockByNumber";
 };
 
 var transactionFromBlockCall = function (args) {
